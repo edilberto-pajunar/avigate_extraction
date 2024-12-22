@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 # Initialize Firebase with credentials from .env file
 def initialize_firestore():
     # Load environment variables from .env file
+    
     load_dotenv("../.env")
 
     try:
