@@ -8,12 +8,10 @@ def main():
         
         # Fetch and print first two documents
         tru_datas = get_TRU_documents()
-        print(tru_datas[28])
         
-        for tru_data in tru_datas[26:]:
+        for tru_data in tru_datas:
                 print(f"TRU Access Tokens: {tru_data}")
                 process_token_with_pandas(tru_data)
-
                 
         # with ThreadPoolExecutor(max_workers=5) as executor:
         #         # Fetch all conversations concurrently
